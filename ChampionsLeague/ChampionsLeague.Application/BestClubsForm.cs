@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace ChampionsLeague.Application
 {
-    public partial class BestClubs : Form
+    public partial class BestClubsForm : Form
     {
-        public BestClubs(IEnumerable<(FootballClub, uint)> data)
+        public BestClubsForm(IEnumerable<(FootballClub, uint)> data)
         {
             InitializeComponent();
             if (data.Count() == 0)

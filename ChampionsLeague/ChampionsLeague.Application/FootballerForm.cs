@@ -46,11 +46,15 @@ namespace ChampionsLeague.Application
         {
             ResultFootballer.Name = nameTextBox.Text;
             ResultFootballer.Club = (FootballClub)footballClubComboBox.SelectedItem;
-            ResultFootballer.GoalCount = uint.Parse(goalsTextBox.Text);
+            uint goalCount;
+            uint.TryParse(goalsTextBox.Text, out goalCount);
+            ResultFootballer.GoalCount = goalCount;
         }
 
         private void footballerFormFormClosing(object sender, FormClosingEventArgs e)
         {
+            if (sender is Form form && form.DialogResult == DialogResult.Cancel)
+                return;
             if (nameTextBox.Text.Length == 0)
             {
                 if (MessageBox.Show(Properties.Resources.WithoutNameFootballerFormWarningText, Text,

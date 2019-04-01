@@ -1,6 +1,6 @@
 ﻿namespace ChampionsLeague.Application
 {
-    partial class BestClubs
+    partial class BestClubsForm
     {
         /// <summary>
         /// Required designer variable.

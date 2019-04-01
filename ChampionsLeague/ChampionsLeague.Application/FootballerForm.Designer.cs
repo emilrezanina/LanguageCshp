@@ -98,6 +98,7 @@ namespace ChampionsLeague.Application
             this.goalsTextBox.Size = new System.Drawing.Size(100, 22);
             this.goalsTextBox.TabIndex = 5;
             this.goalsTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.goalsTextBoxKeyPress);
+            this.goalsTextBox.ShortcutsEnabled = false;
             // 
             // okButton
             // 
@@ -123,6 +124,7 @@ namespace ChampionsLeague.Application
             // FootballerForm
             // 
             this.AcceptButton = this.okButton;
+            this.CancelButton = this.cancelButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(322, 149);

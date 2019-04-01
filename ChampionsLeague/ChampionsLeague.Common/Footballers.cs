@@ -76,7 +76,8 @@ namespace ChampionsLeague.Common
                 else
                     clubGoals.Add(footballers[i].Club, footballers[i].GoalCount);
             }
-            return clubGoals.Where(item => item.Value == clubGoals.Max(pair => pair.Value)).Select(pair => (pair.Key, pair.Value));
+            return clubGoals.Where(item => item.Value == clubGoals.Max(pair => pair.Value))
+                .Select(pair => (pair.Key, pair.Value));
         }
 
         private void ReorganizeAfterRemove(uint index)

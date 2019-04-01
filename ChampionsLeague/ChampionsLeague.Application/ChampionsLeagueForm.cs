@@ -89,7 +89,7 @@ namespace ChampionsLeague.Application
 
         private void bestPlayerButtonClick(object sender, EventArgs e)
         {
-            BestClubs bestClubs = new BestClubs(footballers.FindBestFootbalersClubs());
+            BestClubsForm bestClubs = new BestClubsForm(footballers.FindBestFootbalersClubs());
             bestClubs.ShowDialog();
         }
 
