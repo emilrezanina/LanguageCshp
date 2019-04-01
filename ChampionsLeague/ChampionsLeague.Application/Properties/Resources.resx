@@ -117,7 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ApplicationTitle" xml:space="preserve">
-    <value>HOKUS POKUS</value>
+  <data name="BestClubsFormTitle" xml:space="preserve">
+    <value>Best Clubs</value>
+  </data>
+  <data name="ChampionsLeagueFormTitle" xml:space="preserve">
+    <value>Champions League</value>
+  </data>
+  <data name="CreateFootballerFormTitle" xml:space="preserve">
+    <value>Create Footballer</value>
+  </data>
+  <data name="EditFootballerFormTitle" xml:space="preserve">
+    <value>Edit Footballer</value>
+  </data>
+  <data name="EditMultipleFootballerWarningText" xml:space="preserve">
+    <value>Cannot edit multiple footballers!</value>
+  </data>
+  <data name="LogChangeFootballersCountText" xml:space="preserve">
+    <value>Change in footballers count. Previous count: {0}. New count: {1}.</value>
+  </data>
+  <data name="RegisterLogChangeCountHandlerText" xml:space="preserve">
+    <value>Register change count handler.</value>
+  </data>
+  <data name="UnregisterLogChangeCountHandlerText" xml:space="preserve">
+    <value>Unregister change count handler.</value>
+  </data>
+  <data name="WithoutNameFootballerFormWarningText" xml:space="preserve">
+    <value>Do you want footballer without name?</value>
   </data>
 </root>

@@ -11,6 +11,7 @@ namespace MessageLogger
         public MessageLoggerApplicationForm()
         {
             InitializeComponent();
+            Text = Properties.Resources.ApplicationTitle;
             sendTextToLeftOutputEventHandler = new EventHandler(SendTextToLeftOutput);
             sendTextToRightOutputEventHandler = new EventHandler(SendTextToRightOutput);
         }
